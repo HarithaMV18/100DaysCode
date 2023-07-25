@@ -1,9 +1,14 @@
+
 let minusBtn=document.getElementById("minus");
+
 let plusBtn=document.getElementById("plus");
 let resultBox=document.querySelector(".result");
 let result=resultBox.textContent;
 let reset=document.querySelector("#reset").addEventListener("click",function(){
-    resultBox.textContent=0;
+    result=0;
+    resultBox.textContent=result;
+
+   
 });
 function increment(){
    result++;
