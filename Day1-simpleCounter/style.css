@@ -19,13 +19,15 @@ h1{
  
     width: 500px;
     height: 450px;
-    margin: 0px auto;
+   
+  
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    border: 2px solid black;
+   
     z-index: -1;
+    margin:0px auto;
     
 }
 #minus{
@@ -120,6 +122,14 @@ h1{
    }
 
 }
-/* @media (max-width:552px){
+@media (max-width:557px){
+    .container{
  
-} */
+      margin: 0px 74px;
+    }
+    .resetBtn{
+    
+        margin: 10px 219px;
+    }
+ 
+}
