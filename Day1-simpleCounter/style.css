@@ -24,7 +24,7 @@ h1{
     align-items: center;
     justify-content: center;
     position: relative;
-    border: 1px solid black;
+    /* border: 1px solid black; */
    
    
     margin:0px auto;
@@ -87,7 +87,7 @@ h1{
 
    width: 100px;
    margin: 10px auto;
-   border: 1px solid black;
+   /* border: 1px solid black; */
 
 }
 #reset{
