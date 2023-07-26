@@ -8,9 +8,11 @@ body{
 h1{
     text-align: center;
     margin: 10px auto;
-    width: 558px;
+    width:570px;
+    min-width: 570px;
     height: 100px;
-    font-size: 7rem;
+    font-size: 6rem;
+    border: 1px solid black;
 }
 .container{
  
@@ -22,6 +24,7 @@ h1{
     align-items: center;
     justify-content: center;
     position: relative;
+    border: 1px solid black;
    
    
     margin:0px auto;
@@ -84,7 +87,7 @@ h1{
 
    width: 100px;
    margin: 10px auto;
-   
+   border: 1px solid black;
 
 }
 #reset{
@@ -118,7 +121,9 @@ h1{
    }
 
 }
+
 @media (max-width:557px){
+   
     .container{
  
       margin: 0px 74px;
@@ -126,6 +131,21 @@ h1{
     .resetBtn{
     
         margin: 10px 219px;
+    }
+ 
+}
+@media (max-width:140px){
+    h1{
+        margin: 10px 10px;
+        
+    }
+    .container{
+ 
+      margin: 0px 54px;
+    }
+    .resetBtn{
+    
+        margin: 10px 200px;
     }
  
 }
