@@ -9,10 +9,10 @@ h1{
     text-align: center;
     margin: 10px auto;
     width:570px;
-    min-width: 570px;
+    /* min-width: 570px; */
     height: 100px;
     font-size: 6rem;
-    border: 1px solid black;
+   
 }
 .container{
  
@@ -134,7 +134,7 @@ h1{
     }
  
 }
-@media (max-width:140px){
+/* @media (max-width:140px){
     h1{
         margin: 10px 10px;
         
@@ -148,4 +148,4 @@ h1{
         margin: 10px 200px;
     }
  
-}
+} */
