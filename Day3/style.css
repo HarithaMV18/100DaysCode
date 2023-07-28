@@ -5,7 +5,7 @@
 }
 h1{
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family:  cursive;
     margin: 20px;
 }
 
@@ -14,8 +14,7 @@ h1{
     min-width: 500px;
     height: 500px;
     /* min-height: 200px; */
-    background-color: aquamarine;
-    background: transparent;
+   
     position: relative;
 }
 
@@ -35,7 +34,7 @@ img{
     height: 50px;
    font-size: 35px;
    background-color: rgba(0,0,0,0.8);
-   top: 40%;
+   top: 50%;
    left: 5%;
    color: #ffffff;
    
@@ -46,9 +45,16 @@ img{
     height: 50px;
    font-size: 35px;
    background-color: rgba(0,0,0,0.8);
-   top: 40%;
+   top: 50%;
    right: 5%;
    color: #ffffff;
    
 }
+@media (max-width:900px){
+    .img-container{
+        width: 700px;
+        height: 300px;
+        margin: auto;
+    }
 
+}
