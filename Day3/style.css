@@ -58,7 +58,7 @@ img{
     }
 
 }
-@media (max-width:180px){
+@media (max-width:300px){
     .img-container{
         width: 500px;
         height: 200px;
