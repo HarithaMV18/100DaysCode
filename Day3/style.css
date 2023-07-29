@@ -56,6 +56,45 @@ img{
         height: 300px;
         margin: auto;
     }
+    #left{
+        width: 35px;
+    height: 35px;
+    font-size: 20px;
+    top:60%;
+
+    }
+    #right{
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        top:60%;
+
+    }
+
+}
+@media (max-width:500px){
+    h1{
+        margin: 10px;
+    }
+    .img-container{
+        width: 500px;
+        height: 200px;
+        margin: auto;
+    }
+    #left{
+        width: 20px;
+    height: 20px;
+    font-size: 15px;
+    top:70%;
+
+    }
+    #right{
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        top:70%;
+
+    }
 
 }
 @media (max-width:300px){
@@ -65,16 +104,16 @@ img{
         margin: auto;
     }
     #left{
-        width: 30px;
-    height: 30px;
-    font-size: 25px;
+        width: 20px;
+    height: 20px;
+    font-size: 10px;
     top:70%;
 
     }
     #right{
-        width: 30px;
-        height: 30px;
-        font-size: 25px;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
         top:70%;
 
     }
