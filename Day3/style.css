@@ -50,9 +50,31 @@ img{
    color: #ffffff;
    
 }
+@media (max-width:1000px){
+    .img-container{
+        width: 1000px;
+        height: 300px;
+        margin: auto;
+    }
+    #left{
+        width: 35px;
+    height: 35px;
+    font-size: 20px;
+    top:60%;
+
+    }
+    #right{
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        top:60%;
+
+    }
+
+}
 @media (max-width:900px){
     .img-container{
-        width: 700px;
+        width: 900px;
         height: 300px;
         margin: auto;
     }
