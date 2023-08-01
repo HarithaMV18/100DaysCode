@@ -44,7 +44,7 @@ display: none;
 
     padding: 30px;
     gap: 70px;
-    border: 1px solid black;
+    
     margin:30px;
 }
 .grids{
@@ -141,14 +141,32 @@ display: none;
     .grids{
         width: 80px;
         height: 70px;
-        border-radius: 8px;
+        border: 5px solid black;
+        border-radius: 5px;
+       
         
     }
     
 }
-@media (max-width:200px){
-   body{
-       background-color:"yellow";
+@media (max-width:236px){
+    /* .grid-items{
+       
+        gap: 10px;
+        
+        
+    } */
+   
+    .grids{
+        width: 60px;
+        height: 50px;
+        border: 4px solid black;
+        border-radius: 5px;
+       
+        
+    }
+    #main-heading,h1,#retry{
+        font-size: 1.5rem;
+    }
     
 }
 
