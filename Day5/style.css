@@ -164,3 +164,24 @@ justify-content: space-between;
     }
     
 }
+@media (max-width:450px){
+    .img-left{
+   
+        width: 60%;
+        height: 50%;
+    }
+    .add-items-right .itemsAdd{
+        
+        width: 90%;
+        height: 6%;        
+    }
+    button[type = "button"]{
+        font-size: 0.95rem;
+        width: 15%;
+    }
+    input[type = "text"]{
+        width: 75%;
+        font-size: 1.75rem;
+    }
+    
+}
