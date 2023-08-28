@@ -10,9 +10,9 @@ body,html{
 }
 body{
     background-color: yellow;
-    /* display: flex;
+    display: flex;
     align-items: center;
-    /* justify-content: center; */ 
+    justify-content: center;
 }
 .mainContainer{
     width: 40%;
@@ -111,6 +111,22 @@ body{
     .allButtons{
         
         height: 60%;
+       
+        
+       
+    }
+    
+}
+@media (max-width:250px) {
+   
+    .allButtons button{
+        font-size: 20px;
+       
+    
+    }
+    .allButtons{
+        
+        height: 50%;
        
         
        
