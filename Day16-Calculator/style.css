@@ -76,8 +76,11 @@ body{
     background-color: #4285f4;
     border: 0px;
 }
+.allButtons button:nth-child(21){
+    grid-column: 1/ span 5;
+}
 #content {
-    font-size: 20px;
+    font-size: 30px;
     text-align: right;
   
     border-radius: 5px;
