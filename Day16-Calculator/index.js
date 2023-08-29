@@ -6,8 +6,8 @@ let count = 0;
 
 function equals(nums) {
   try {
-    eval(nums);
-    if (eval(nums)) {
+    // eval(nums);
+    if (eval(nums) || eval(nums)===0) {
       nums = eval(nums);
       result.innerHTML = nums;
     } else {
