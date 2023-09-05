@@ -26,7 +26,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     margin: auto;
-    padding: 25px;
+    /* padding: 20%; */
 }
 
 h3 {
@@ -79,15 +79,25 @@ span{
     background-color: #58708373;
     font-size: 2vw;
 }
-/* @media (max-width:885px){
-    .clock{
-        width: 25%;
-        height: 51%;
-        
-        font-size: 8vh;
+@media (max-width:600px){
+    .clock-container{
+      height: 60%;
 
 
     }
+    #meridien{
+        width: 14%;
+        font-size: 2.5vw;
+    }
+    span{
+        font-size: 2.5vw;
+    }
+    .clock{
+        font-size: 6vw;
+    }
+    h3{
+        font-size: 4.5vw;
+    }
 
 
-} */
+}
