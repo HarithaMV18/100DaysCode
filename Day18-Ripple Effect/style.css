@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 10%;
+    padding-left: 10%; */
+    
+}
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: 90%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* border: 1px solid white; */
+    /* gap: 10px; */
+    
+    position: relative;
+    
+  
+    top: 5%;
+    padding-left: 35px;
+
+}
+.grid-item{
+    width: 70%;
+    height: 100%;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    /* padding: 5px; */
+    /* transition-property: width,height; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px white;
+
+    
+}
+.grid-item p{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.grid-item::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height:0px;
+    border-radius: 50%;
+    background-color: orange;
+    left: var(--gridLeft);
+    top: var(--gridTop);
+    transform: translate(-50%,-50%);
+    transition-property: width,height;
+    transition-duration: 2s;
+}
+#g2{
+    grid-area: 2/2;
+}
+
+#g3{
+    grid-area: 3/3;
+}
+.grid-item:hover::before{
+    width: 780px;
+    height:780px;
+   
+   
+
+}
+.grid-item:hover{
+    transform: scale(1.2);
+
+}
+
+@media (max-width:700px){
+    .grid-item{
+        width: 90%;
+        height: 100%;
+    }
+}
+@media (max-width:575px){
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 20px;
+    }
+    .grid-item{
+        width: 90%;
+        height: 80%;
+    }
+    #g2{
+        grid-area: 1/2;
+    }
+    
+    #g3{
+        grid-area: 2/1;
+    }
+    
+}
+@media (max-width:475px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px;
+      
+    }
+    .grid-item{
+        width: 60%;
+        height: 100%;
+        margin: auto;
+    }
+    #g2{
+        grid-area: 2/1;
+    }
+    
+    #g3{
+        grid-area: 3/1;
+    }
+
+}
+
