@@ -21,6 +21,11 @@ body,html{
    
     
 }
+.container h2{
+    color:white;
+    text-align: center;
+    padding: 5%;
+}
 .star{
     width: 80px;
     height: 80px;
