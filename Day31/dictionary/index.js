@@ -10,7 +10,9 @@ const fetchAPI=async(value)=>{
         meaning_text.style.display="none"
         search_text.innerText=`Searching the meaning of "${value}"`
         const url=`https://api.dictionaryapi.dev/api/v2/entries/en/${value}`;
-        const result=await fetch(url).then((result)=>{return result.json()});
+        const result=await fetch(url).then((result)=>{return result.json()}).catch((error)=>{
+console.log(error)
+        });
         search_text.style.display="none";
         meaning_text.style.display="block";
         console.log(result[0].phonetics[0].audio)
