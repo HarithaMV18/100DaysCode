@@ -96,5 +96,8 @@ img{
     #main{
         width:100%
     }
+        #main input[type="text"]{
+        padding: 10px;
+    }
     
 }
