@@ -29,7 +29,7 @@ const getImages=async(inputImgValue,page)=>{
           <p id="img-description">${item.alt_description}</p>
       </div>`
 
-       })
+       }).join("")
        load_more_btn.style.display="block";
         
     } catch (error) {
