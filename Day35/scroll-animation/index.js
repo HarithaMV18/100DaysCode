@@ -18,4 +18,4 @@ const scrollfunction=()=>{
     
 }
 window.addEventListener("scroll",scrollfunction);
-window.addEventListener("touchmove",scrollfunction);
+document.body.addEventListener("touchmove",scrollfunction);
