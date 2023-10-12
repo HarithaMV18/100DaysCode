@@ -36,3 +36,10 @@ h1{
 .content-box.show{
     transform: translateX(0);
 }
+@media (max-width:500px) {
+    body{
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    
+}
