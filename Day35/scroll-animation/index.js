@@ -1,5 +1,5 @@
 const content_box=document.querySelectorAll(".content-box");
-window.addEventListener("scroll",function(){
+const scrollfunction=()=>{
  
     const triggerHeight=Math.ceil(window.innerHeight/5*4)
 
@@ -16,4 +16,6 @@ window.addEventListener("scroll",function(){
 
 
     
-})
+}
+window.addEventListener("scroll",scrollfunction);
+window.addEventListener("touchmove",scrollfunction);
