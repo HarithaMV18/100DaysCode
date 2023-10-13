@@ -55,7 +55,7 @@ margin-right: 50px;
 #section1-content .title{
     text-align: center;
     width: 70%;
-    height: 80%;
+/*     height: 80%; */
     margin: auto;
     color:white;
     display: flex;
