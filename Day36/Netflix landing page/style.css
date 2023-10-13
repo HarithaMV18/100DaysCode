@@ -123,8 +123,22 @@ margin-right: 50px;
     font-size: 1.5vw;
     
 }
-.section2 .section2-content img{
+.section2 .section2-content .img-container{
     width:50%;
+    position: relative;
+}
+.video-container{
+    position: absolute;
+    width: 75%;
+    top: 4.8vw;
+    left: 4vw;
+    z-index: -1;
+}
+.video-container video{
+    width: 100%;
+}
+.section2 .section2-content .img-container img{
+    width:100%;
 }
 .section2-text{
     flex-basis: 60vw;
@@ -176,7 +190,12 @@ margin-right: 50px;
     .section2 .section2-content img{
         width:55%;
     }
-  
+    .video-container{
+       
+        width: 80%;
+        
+      
+    }
 }
 @media (max-width:500px) {
     #section1-content .title p{
