@@ -262,15 +262,15 @@ body {
 }
 
 .section4 .section4-content .img-container {
-    width: 50%;
+    width: 70%;
     position: relative;
 }
 
 .section4 .section4-content .img-container .video-container {
     position: absolute;
-    width: 80%;
+    width: 65%;
     top: 4.2vw;
-    left: 4vw;
+    left: 6.4vw;
     z-index: -1;
 }
 
@@ -357,18 +357,16 @@ font-weight: 300;
 }
 .section6 .questions .quesBottom{
     background-color: rgba(128, 128, 128, 0.48);
-    
-  display: none;
-  
-  flex-basis: 0px;
+  /* flex-basis: 0px; */
+  /* height: 0px; */
   overflow: hidden;
-  /* padding: 20px; */
-  transition-property: flex-basis;
-  transition-duration:  1s ;
-  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+max-height:  0px;
 }
 .section6 .questions .quesBottom p{
-    margin-bottom: 15px;
+    margin: 10px;
+    padding: 10px;
+
 }
 .section6Content{
     font-weight: 300;
@@ -461,6 +459,12 @@ button:hover{
         width: 85%;
         font-size: 1.7vw;   
     }
+    .section4 .section4-content .img-container .video-container {
+     
+        left: 7.6vw;
+       
+    }
+    
 
     
 
@@ -503,6 +507,11 @@ button:hover{
     .section4 .section4-content .img-container,
     .section5 .section5-content .img-container {
         flex-basis: 90%;
+    }
+    .section4 .section4-content .img-container .video-container {
+     
+        left: 9.2vw;
+       
     }
 
     .video-container {
@@ -679,6 +688,11 @@ button:hover{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);    
         
+    }
+    .section4 .section4-content .img-container .video-container {
+     
+        left: 14.4vw;
+       
     }
     
 

@@ -7,13 +7,15 @@ qTop.forEach((item,index)=>{
 
         if(cancelIcon[index].childNodes[0].className=="ri-add-line"){
             cancelIcon[index].innerHTML="<i class='ri-close-line'></i>"
-            displayBottom[index].style.display="block";
-            displayBottom[index].style.flexBasis="content";
-            displayBottom[index].style.padding="20px";
+    
+            displayBottom[index].style.maxHeight="300px";
+         
         }
         else{
-            cancelIcon[index].innerHTML="<i class='ri-add-line'></i>"
-            displayBottom[index].style.display="none"
+            cancelIcon[index].innerHTML="<i class='ri-add-line'></i>";
+            displayBottom[index].style.maxHeight="0px";
+
+           
      
         }
 
