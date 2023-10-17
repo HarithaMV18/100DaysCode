@@ -1,95 +1,112 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body,html{
+
+body,
+html {
     width: 100%;
-    height:100%
+    height: 100%
 }
-body{
+
+body {
     background-color: #000;
     color: white;
 }
-#main-wrapper{
+
+#main-wrapper {
     width: 100%;
     height: 100%;
-   
+
 
 }
-#main-wrapper .section1{
+
+#main-wrapper .section1 {
     width: 100%;
-/*     height: 100%;
+    /*     height: 100%;
      max-height: 100vh; */
     background-image: url("https://preview.redd.it/how-can-someone-make-this-background-with-html-and-css-i-v0-zjgs096khv591.jpg?auto=webp&s=9659527da9196c27a8875200b41d20a8e901c341");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#section1-content{
+
+#section1-content {
     width: 100%;
     /* height: 100%; */
-    min-height:100vh;
+    min-height: 100vh;
     background-color: #00000077;
 }
-#section1-content .header{
+
+#section1-content .header {
     width: 100%;
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
-}
-#section1-content .header img{
- width: 30vw;
- object-fit: cover;
 
 
 }
-#section1-content .header button{
-padding: 10px 20px;
-background-color: red;
-border: 0px;
-color: white;
-border-radius: 5px;
-font-weight: 700;
-margin-right: 50px;
+
+#section1-content .header img {
+    width: 30vw;
+    object-fit: cover;
+
+
 }
-#section1-content .title{
+
+#section1-content .header button {
+    padding: 10px 20px;
+    background-color: red;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+#section1-content .title {
     text-align: center;
     width: 70%;
     height: calc(100vh -150px);
     margin: auto;
-    color:white;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 30px 0px;
 }
-#section1-content .title p{
+
+#section1-content .title p {
     font-size: 3.5rem;
     font-weight: 900;
     margin: 20px 0px;
-    
-    
+
+
 }
-#section1-content .title h4{
+
+#section1-content .title h4 {
     font-weight: 100;
     font-size: 1.3rem;
 
 }
-.email-block{
-      margin-top: 30px;
+
+.email-block {
+    margin-top: 30px;
     margin-bottom: 30px;
-  
+
 }
-.email-block input[type="text"]{
-   width: 50%;
-  padding: 15px;
+
+.email-block input[type="text"] {
+    width: 50%;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.466);
     color: white;
     margin-right: 20px;
@@ -97,7 +114,8 @@ margin-right: 50px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
-.email-block button{
+
+.email-block button {
     width: 150px;
     padding: 10px;
     color: white;
@@ -105,183 +123,563 @@ margin-right: 50px;
     border: 0px;
     border-radius: 5px;
 }
+
 /* section2 */
-.section2{
+.section2 {
     border-top: 10px solid rgba(128, 128, 128, 0.563);
     width: 100%;
     border-bottom: 10px solid rgba(128, 128, 128, 0.563);
     padding: 30px 10px;
 
 }
-.section2 .section2-content{
+
+.section2 .section2-content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  
+
     width: 80%;
     margin: 30px auto;
     font-size: 1.5vw;
-    
+
 }
-.section2 .section2-content .img-container{
-    width:50%;
+
+.section2 .section2-content .img-container {
+    width: 50%;
     position: relative;
 }
-.video-container{
+
+.download-block {
+    position: absolute;
+    top: 18.8vw;
+    left: 7.5vw;
+    width: 60%;
+    background-color: #000;
+    border: 1px solid white;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 35px 10px 10px;
+    border-radius: 5px;
+}
+.download-text p{
+    color: blue;
+}
+#download-icon  {
+    font-size: 2vw;
+    
+}
+/* #download-icon::after{
+    content: "_";
+    font-size: 2vw;
+    position: absolute;
+    top: 0.9vw;
+    left: -0.17vw;
+} */
+
+
+
+
+
+#stranger-things-poster {
+    width: 25%;
+}
+
+.video-container {
     position: absolute;
     width: 75%;
     top: 4.8vw;
     left: 4vw;
     z-index: -1;
 }
-.video-container video{
+
+.video-container video {
     width: 100%;
 }
-.section2 .section2-content .img-container img{
-    width:100%;
+
+.section2 .section2-content .img-container img {
+    width: 100%;
 }
-.section2-text{
+
+.section2-text {
     flex-basis: 60vw;
 }
+
 /* section 3 */
-.section3{
+.section3 {
 
     width: 100%;
     border-bottom: 10px solid rgba(128, 128, 128, 0.563);
     padding: 30px 10px;
 
 }
-.section3 .section3-content{
-   
+
+.section3 .section3-content {
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  
+
     width: 80%;
     margin: 30px auto;
     font-size: 1.5vw;
+
+}
+
+.section3 .section3-content .img-container {
+    width: 70%;
+    position: relative;
+
+}
+
+.section3 .section3-content .img-container img {
+    width: 100%;
+}
+
+/* .section3-text {
+    flex-basis: 60vw;
+} */
+
+/* section4 */
+.section4 {
+
+    width: 100%;
+    border-bottom: 10px solid rgba(128, 128, 128, 0.563);
+    padding: 30px 10px;
+
+}
+
+.section4 .section4-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 80%;
+    margin: 30px auto;
+    font-size: 1.5vw;
+
+}
+
+.section4 .section4-content .img-container {
+    width: 50%;
+    position: relative;
+}
+
+.section4 .section4-content .img-container .video-container {
+    position: absolute;
+    width: 80%;
+    top: 4.2vw;
+    left: 4vw;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+}
+
+.section4 .section4-content .img-container img {
+    width: 100%;
+}
+
+.section4-text {
+    flex-basis: 60vw;
+}
+/*Section 5*/
+.section5 {
+
+    width: 100%;
+    border-bottom: 10px solid rgba(128, 128, 128, 0.563);
+    padding: 30px 10px;
+
+}
+
+.section5 .section5-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 80%;
+    margin: 30px auto;
+    font-size: 1.5vw;
+
+}
+
+.section5 .section5-content .img-container {
+    flex-basis: 50%;
+  
+}
+.section5 .section5-content .img-container img{
+width: 100%;
+object-fit: cover;
+}
+.section5-text {
+    flex-basis: 60vw;
+}
+/* section6 */
+.section6 {
+
+    width: 100%;
+    border-bottom: 10px solid rgba(128, 128, 128, 0.563);
+    padding: 30px 10px;
+    /* text-align: center; */
+
+}
+.section6 h1{
+    margin: auto;
+    width: max-content;
+    font-size: 3.5vw;
+    font-weight: 900;
+}
+.section6 .questions{
+    width: 75%;
+    margin: 5px auto;
+ 
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+font-size: 1.5vw;
+font-weight: 300;
+    gap: 2px;
+}
+.section6 .questions .quesTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-basis: 50px;
+    background-color: rgba(128, 128, 128, 0.48);
+}
+.section6 .questions .quesTop:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.749);;
+}
+.section6 .questions .quesBottom{
+    background-color: rgba(128, 128, 128, 0.48);
+    
+  display: none;
+  
+  flex-basis: 0px;
+  overflow: hidden;
+  /* padding: 20px; */
+  transition-property: flex-basis;
+  transition-duration:  1s ;
+  transition-timing-function: ease-in-out;
+}
+.section6 .questions .quesBottom p{
+    margin-bottom: 15px;
+}
+.section6Content{
+    font-weight: 300;
+    text-align: center;
+    margin: 30px auto;
+    /* border: 1px solid red; */
+    width: 80%;
+}
+.section6Content .email-block input[type="text"]{
+    width: 35%;
+}
+button:hover{
+    cursor: pointer;
+
+}
+/* section7 */
+.section7{
+    width: 75%;
+    margin: 20px auto;
+    padding: 40px 0px;
+    font-size: 1.3vw;
+    font-weight: 300;
+
+}
+.section7 .footer-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 20px 0px;
+    gap: 3px;
+ 
     
 }
-.section3 .section3-content .img-container{
-    width:70%;
-    position: relative;
- 
-}
-.section3 .section3-content .img-container img{
-    width:100%;
-}
-.section3-text{
-    flex-basis: 60vw;
+.section7 .footer-links a{
+    color: white;
+    padding: 5px 0px;
 }
 
 @media (max-width:840px) {
-    #section1-content .title{
-       
+    #section1-content .title {
+
         width: 95%;
     }
-    #section1-content .header img{
+
+    #section1-content .header img {
         width: 40vw;
-       }
-       #section1-content .title h4{
-   
+    }
+
+    #section1-content .title h4 {
+
         font-size: 1.3rem;
-    
+
     }
-    .section2 .section2-content{
+
+    .section2 .section2-content,.section3 .section3-content,.section4 .section4-content , .section5 .section5-content{
         font-size: 2vw;
-        width: 90%;
+        width: 95%;
     }
+    /* .section2 .section2-content .img-container,
+    .section3 .section3-content .img-container,
+    .section4 .section4-content .img-container {
+        width: ;
+    } */
   
+    .download-block {
+        font-size: 1.35vw;
+        width: 60%;
+        left: 8.5vw;
+        top: 22vw;
+    }
+    .section6 h1{
+ 
+        font-size: 4vw;
+        font-weight: 900;
+    }
+    .section6 .questions{
+        width: 80%;
+    font-size: 2vw;
+    font-weight: 300;
+      
+    }
+    .section6Content .email-block input[type="text"]{
+        width: 45%;
+    }
+    .section6Content{
+      
+        width: 85%;
+    }
+    .section7{
+        width: 85%;
+        font-size: 1.7vw;   
+    }
+
+    
+
 }
+
 @media (max-width:690px) {
-   
-    #section1-content .header img{
+
+    #section1-content .header img {
         width: 50vw;
-       }
-       #section1-content .title h4{
-   
+    }
+
+    #section1-content .title h4 {
+
         font-size: 1.2rem;
-    
+
     }
-    #section1-content .title p{
-   
+
+    #section1-content .title p {
+
         font-size: 2.3rem;
-    
+
     }
-    
-    .email-block input[type="text"]{
+
+    .email-block input[type="text"] {
         display: block;
         margin: 10px auto;
         width: 65%;
     }
-    .section2 .section2-content{
-        font-size: 2.5vw;
+
+    .section2 .section2-content,
+    .section3 .section3-content,
+    .section4 .section4-content,
+    .section5 .section5-content  {
+        font-size: 2.1vw;
         width: 100%;
     }
-    .section2 .section2-content .img-container{
-        width:55%;
+
+    .section2 .section2-content .img-container,
+    .section3 .section3-content .img-container,
+    .section4 .section4-content .img-container,
+    .section5 .section5-content .img-container {
+        flex-basis: 90%;
     }
-    .video-container{
+
+    .video-container {
         width: 80%;
     }
-    .section3 .section3-content{
-        
+    .download-block {
+      
+   
+        font-size: 1.8vw;
+        width: 70%;
+        top:24vw;
+    left: 6vw;}
+    .section6 h1{
+ 
+        font-size: 4.5vw;
+       
+    }
+    .section6 .questions{
+        width: 90%;
+
+    font-size: 2.5vw;
+    font-weight: 300;
+      
+    }
+    .section6Content .email-block input[type="text"]{
+        width: 60%;
+    }
+    .section6Content{
+      
+        width: 90%;
+    }
+    .section7{
+        width: 90%;
+        font-size: 1.8vw;
+        font-weight: 300;
+    
+    }
+
+    
+
+    /* .section3 .section3-content {
+
         width: 100%;
         font-size: 2vw;
-        
-    }
-    .section3 .section3-content .img-container{
-        width:85%;
-    
-    }
-    .section3-text{
+
+    } */
+
+    /* .section3 .section3-content .img-container {
+        width: 85%;
+
+    } */
+    /* .section3 .section3-content .img-container {
+        width: 95%;
+    } */
+
+    /* .section3-text {
         flex-basis: 90vw;
-
-
+    } */
+    /* .download-text{
+        padding: auto 10px;
     }
-   
-    
+
+    #download-icon{
+        font-size: 3vw;
+  
+    } */
+    /* #download-icon::after{
+      
+        font-size: 4.1vw;
+        top: 0.5vw;
+        left: -0.8vw;
+    } */
+
+
 }
 
 
 @media (max-width:500px) {
-    #section1-content .title p{
-   
+    #section1-content .title p {
+
         font-size: 2.1rem;
-    
+
     }
-    #section1-content .title h4{
-   
+
+    #section1-content .title h4 {
+
         font-size: 1rem;
-    
+
     }
-    .email-block input[type="text"]{
+
+    .email-block input[type="text"] {
 
         width: 85%;
     }
-    .section2 .section2-content, .section3 .section3-content{
+
+    .section2 .section2-content,
+    .section3 .section3-content,
+    .section4 .section4-content,
+    .section5 .section5-content {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         font-size: 3.5vw;
     }
-    .section2-text, .section3-text{
+
+    .section2-text,
+    .section3-text,
+    .section4-text,
+    .section5-text {
         flex-basis: 90vw;
-        padding:20px 5px;
+        padding: 20px 5px;
         text-align: center;
-       
-     
+
+
     }
-    .video-container{
-       
+
+    .video-container {
+
         width: 90%;
-        
+
+
+    }
+
+    .section2 .section2-content .img-container,
+    .section3 .section3-content .img-container,
+    .section4 .section4-content .img-container,
+    .section5 .section5-content .img-container
+    {
+       flex-basis: 90%;
+
+    }
+    .download-block {
+      
+        top: 42vw;
+        left:12vw;
+        font-size: 2.5vw;
       
     }
-   
-    .section2 .section2-content .img-container,  .section3 .section3-content .img-container{
-        width:90%;
+    #download-icon{
+        font-size: 5.5vw;
+  
+    }
+    /* #download-icon::after{
+      
+        font-size: 5vw;
+        top: 1.95vw;
+        left: -0.63vw;
+    } */
+    .section6 h1{
+ 
+        font-size: 5.5vw;
        
     }
+    .section6 .questions{
+        width: 100%;
+
+    font-size: 3.5vw;
   
+      
+    }
+    .section6Content .email-block input[type="text"]{
+        width: 80%;
+    }
+    .section6Content{
+      
+        width: 100%;
+    }
+    .section7{
+        width: 95%;
+        font-size: 2.7vw;
+    }
+    .section7 .footer-links{
+
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);    
+        
+    }
+    
+
 }
