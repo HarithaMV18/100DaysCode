@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    /* display: flex; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.rotate-section{
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    transform-origin:top left;
+    background-color: white;
+ 
+    transition: transform 1s linear;
+  
+}
+.menu-icons{
+    background-color: orange;
+    width: 115px;
+    height: 115px;
+    font-size: 25px;   
+    border-radius: 50%;
+    position: relative;;
+    color: white;
+    /* transform-origin: center; */
+    transform: translate(-45px,-30px) ;
+    /* transform: translate(-60px,-30px) ; */
+    /* transform: rotate(45deg); */
+    /* transition: transform 2s linear; */
+    transition: transform 1s linear;
+    
+}
+.ri-close-line{
+/* margin: 0px 25px;
+margin-top: 40px; */
+/* margin: 0px 20px;
+margin-top: 35px; */
+/* margin-top: 50px; */
+position: absolute;
+top: 65px;
+ left: 25px;
+
+
+}
+.ri-menu-line{
+  /* margin-right: 15px;
+  margin-bottom: 25px; */
+    /* margin-bottom: 45px; */
+    position: absolute;
+    top: 55px;
+    right: 15px;
+}
+
+#main .content{
+/* display: inline; */
+
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    transition: transform 2s linear;
+    background-color: white;
+}
+#main .content .heading{
+    margin: 20px 0px;
+}
+#main .content .image-dog{
+    margin: 20px 0px;
+    width: 100%;
+
+}
+#main .content .image-dog img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-items{
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 100%;
+    height: 100%;
+}
+.menu-items ul{
+    color: white;
+    margin-left: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+.menu-items ul li{
+    transform: translateX(-100%);
+    transition: transform 2s, opacity 2s;
+    opacity: 0;
+
+}
+.show{
+    opacity: 1 !important;
+    transform: translateX(0%) !important;
+  }
