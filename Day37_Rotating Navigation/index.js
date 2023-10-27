@@ -23,6 +23,7 @@ close_icon.addEventListener("click",function(){
     // content_div.style.transform=" rotate(0deg)";
     rotate_section.style.transform=" rotate(0deg)";
     menu_icons.style.transform=" translate(-65px,-30px)  rotate(0deg)";
+    rotate_section.style.height="100vh";
     menu_items.forEach((item)=>{
         item.classList.remove("show")
 
