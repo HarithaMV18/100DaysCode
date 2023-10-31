@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="classStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body >
+    <div class="container mx-auto py-2  overflow-x-hidden">
+        <header class="flex items-center justify-between ">
+            <h1>Fitness</h1>
+            <nav class="flex items-center justify-between">
+                <ul class="flex items-center justify-between ">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                    <li>Subscription</li>
+                </ul>
+                <button class="px-1">Join Now</button>
+            </nav>
+            <span class="menu-icon"><i class="ri-menu-line"></i></span>
+            <div class="side-nav">
+                <nav class="flex flex-direction-col py-2 px-2  justify-between">
+                    <span class="close-icon"><i class="ri-close-line"></i></span>
+                    <ul class="flex flex-direction-col justify-between">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact Us</li>
+                        <li>Pricing</li>
+                    </ul>
+                    <button class="px-1 mTop-2">Join Now</button>
+                </nav>
+
+            </div>
+        </header>
+        <hr>
+        <main>
+            <section class="home  py-1 flex">
+                <div class="homeLeftContent flex justify-center flex-direction-col">
+                    <h2>Fitness Gym</h2>
+                    <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cum dolorem corporis velit placeat veniam.</i>
+                </div>
+                <div class="homeRightContent">
+                    <img src="./images/homeImg.jpg" alt="weight lifting image">
+                </div>
+                
+            </section>
+            <hr>
+            <section class="subscription">
+                <h2>Pricing</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit voluptatum voluptas explicabo eum dolore atque totam quod temporibus quo quos.</p>
+                <div class="price-models flex items-center justify-between mTop-2">
+                    <div id="free" class="pricing-list ">
+                        <h1 class="price-header">Free</h1>
+                      
+                        <div class="list-details">
+                            <h1 class="display-inline">$0</h1><span class="per-month">/mo</span>
+                            <p>10 users included</p>
+                            <p>2 GB of storage</p>
+                            <p>Email support</p>
+                            <p>Help center access</p>
+                        </div>
+                       
+                        <button>Sign up for free</button>
+                    </div>
+                    <div id="pro" class="pricing-list">
+                        <h1 class="price-header">Pro</h1>
+                        <div class="list-details">
+                        <h1 class="display-inline">$15</h1><span class="per-month">/mo</span>
+                        <p>20 users included</p>
+                        <p>10 GB of storage</p>
+                        <p>Priority email support</p>
+                        <p>Help center access</p>
+                        
+                        </div>
+                        <button>Get Started</button>
+                    </div>
+                    <div id="enterprise" class="pricing-list">
+                        <h1 class="price-header">Enterprise</h1>
+                        <div class="list-details">
+                        <h1 class="display-inline">$29</h1><span class="per-month">/mo</span>
+                        <p>30 users included</p>
+                        <p>15 GB of storage</p>
+                        <p>Phone and email support</p>
+                        <p>Help center access</p>
+                       
+                        </div>
+                        <button>Contact Us</button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+<script src="index.js"></script>    
+</body>
+</html>
