@@ -3,7 +3,6 @@ import { useState } from 'react';
 import './App.css';
 import Content from './Components/Content';
 import InputColor from './Components/InputColor';
-import ToggleTextColor from './Components/ToggleTextColor';
 
 function App() {
 
@@ -20,7 +19,6 @@ function App() {
       <Content newColor={newColor} hexCode={hexCode} toggleText={toggleText}/>
       <InputColor newColor={newColor} setNewColor={setNewColor} color_list={color_list}
      setHexCode={setHexCode} setToggleText={setToggleText}/>
-      <ToggleTextColor setToggleText={setToggleText}/>
     </div>
   );
 }
