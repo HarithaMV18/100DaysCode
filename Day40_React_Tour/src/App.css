@@ -1,0 +1,92 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(159 210 214);
+}
+#root{
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px;
+}
+.card-container{
+  width: 100%;
+  /* height: 100%; */
+ 
+}
+
+.card{
+  width: 40vw;
+  /* min-width: 38%; */
+  height: fit-content;
+  background-color: white;
+  margin: 20px auto;
+  padding-bottom: 10px;
+  border-radius: 5px;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.topCard{
+  width: 100%;
+
+}
+.topCard img{
+  width: 100%;
+  /* height: 18rem; */
+  object-fit: cover;
+}
+.text-underline{
+  /* text-decoration: underline; */
+  border-bottom: 5px solid blue;
+  /* width: max-content;
+  text-align: center; */
+}
+.bottomCard{
+  width: 95%;
+  margin: 5px;
+}
+.readMore{
+  color: blue;
+  cursor: pointer;
+}
+.readLess{
+  color: red;
+  cursor: pointer;
+}
+.readLess-text{
+  display: none;
+}
+.btn{
+  border: 1px solid red;
+  color: red;
+  width: 120px;
+  padding: 5px 10px;
+  background-color: white;
+  cursor: pointer;
+ display: block;
+ margin: 10px auto;
+ 
+}
+@media (max-width:1000px){
+  .card{
+    width: 50vw;
+
+  }
+}
+@media (max-width:700px){
+  .card{
+    width: 65vw;
+
+  }
+}
+@media (max-width:450px){
+  .card{
+    width: 80vw;
+
+  }
+}
+
+
