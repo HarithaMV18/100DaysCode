@@ -17,7 +17,12 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
-            <Route path="/destination" element={<Destination />} />
+            <Route path="/destination">
+              <Route index element={<Destination />} />
+              {/* <Route path="moon" element={<Moon />} />
+              <Route path="mars" element={<Mars />} /> */}
+            </Route>
+
             <Route path="/crew" element={<Crew />} />
             <Route path="/technology" element={<Technology />} />
           </Route>

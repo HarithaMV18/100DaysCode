@@ -16,19 +16,19 @@ const Navbar = ({ logo }) => {
           <li>00 Home</li>
         </NavLink>
         <NavLink
-          to="destination"
+          to="/destination"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           <li>01 Destination</li>
         </NavLink>
         <NavLink
-          to="crew"
+          to="/crew"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           <li>02 Crew</li>
         </NavLink>
         <NavLink
-          to="technology"
+          to="/technology"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           <li>03 Technology</li>
