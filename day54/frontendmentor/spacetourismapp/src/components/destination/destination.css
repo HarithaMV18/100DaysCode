@@ -42,7 +42,9 @@
 
 .destination__details .destination__left__details {
     width: 30%;
-    min-width: 180px;
+    min-width: 211px;
+
+    /*max-width: 400px; */
     height: 100%;
 
     display: flex;
@@ -118,7 +120,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 95%;
 
 }
 
@@ -143,27 +145,89 @@
 }
 
 /* tablet */
+
+
 @media (max-width:790px) {
     .destination__details {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .destination__content {
+        width: 100%;
+        justify-content: end;
+        padding-top: 1rem;
+    }
+
+    .destination__class {
+
+        background-image: url('../../starter-code/assets/destination/background-destination-tablet.jpg');
+    }
+
+    .destination__details .destination__left__details {
+        width: 50%;
+        height: 40%;
+
+        min-width: 50%;
+
+
     }
 
     .destination__details .destination__right__details {
         width: 100%;
+        height: 50%;
         align-items: center;
         gap: 0px;
+        text-align: center;
+
+    }
+
+    .destination__title {
+        padding: 1rem 0px;
+    }
+
+    .destination__details .destination__right__details>p {
+        padding-bottom: 1rem;
     }
 }
 
 /* mobile */
-@media (max-width:790px) {
+@media (max-width:635px) {
+    .destination__class {
+
+        background-image: url('../../starter-code/assets/destination/background-destination-mobile.jpg');
+    }
+
     .destination__title {
         margin: auto;
     }
 
-    .destination__content {
+    /* .destination__content {
         height: calc(100% - 90px);
+    } */
+
+}
+
+@media (max-width:370px) {
+    /* .destination__details .destination__left__details {
+        min-width: 190px;
+    } */
+
+    .destination__title p {
+        font-size: 1rem;
     }
 
+    .destination__details .destination__right__details h1 {
+        font-size: 4rem;
+    }
+
+    .destination__details .destination__right__details p {
+        font-size: 0.7rem;
+    }
+
+    .destination__details .destination__right__details h3 {
+        font-size: 1rem;
+    }
 }

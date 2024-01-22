@@ -120,7 +120,7 @@
 
     .home__content {
         flex-direction: column;
-        width: 63%;
+        /* width: 63%; */
         height: calc(100% - 84px);
         gap: 2.5rem;
 
@@ -152,4 +152,24 @@
     }
 
 
+}
+
+@media (max-width:350px) {
+    .home__content .left__content p {
+        font-size: 0.8rem;
+    }
+
+    .home__content .left__content h1 {
+        font-size: 4rem;
+    }
+
+    .right__content .right__circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .right__content .right__circle::before {
+        width: 150px;
+        height: 150px;
+    }
 }
