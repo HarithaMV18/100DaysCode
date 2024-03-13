@@ -1,10 +1,10 @@
-const apiKey="8dc8e720eaafd3f2ee86020b60cb2234";
+const myKey = config.APIKEY
 const getWeatherBtn=document.getElementById("getWeather");
 const getWeatherInput=document.getElementById("input");
 const weather_details=document.querySelector(".weather-details")
 const getWeatherData=async(city)=>{
     try {
-        const weatherDetails= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`).then((response)=>{return response.json()}).catch((error)=>{
+        const weatherDetails= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${myKey}&units=metric`).then((response)=>{return response.json()}).catch((error)=>{
             console.log(error)
         })
         console.log(weatherDetails);
